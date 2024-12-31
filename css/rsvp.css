@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+}
+
+.logo {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #666;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    position: relative;
+    background: url('/assets/V1-images-10.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-title {
+    color: white;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.response-date {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* Form Styles */
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.name-group {
+    display: flex;
+    gap: 20px;
+}
+
+.name-field {
+    flex: 1;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.required {
+    color: #ff0000;
+    margin-left: 4px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.submit-btn {
+    align-self: center;
+    padding: 12px 40px;
+    background: none;
+    border: 2px solid #333;
+    color: #333;
+    font-family: inherit;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #333;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .main-content {
+        padding: 0 10px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .name-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .name-field {
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .response-date {
+        font-size: 0.8rem;
+    }
+
+    .rsvp-form {
+        padding: 0 10px;
+    }
+}

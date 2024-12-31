@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP - Sonny</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/rsvp.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/" class="logo">MJPRU</a>
+        <nav class="nav">
+            <a href="/ourstory.html">OUR STORY</a>
+            <a href="/when&where.html">WHEN & WHERE</a>
+            <a href="/registry.html">REGISTRY</a>
+            <a href="/rsvp.html">RSVP</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <h1 class="hero-title">A T A L - S A B H A</h1>
+    </section>
+
+    <main class="main-content">
+        <h2 class="section-title">We're so excited to celebrate with you!</h2>
+        <p class="response-date">KINDLY RESPOND BY APRIL 1,2016</p>
+
+        <form id="rsvp-form" class="rsvp-form">
+            <div class="form-group">
+                <label for="email">Email Address<span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group name-group">
+                <div class="name-field">
+                    <label for="firstName">First Name<span class="required">*</span></label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="name-field">
+                    <label for="lastName">Last Name<span class="required">*</span></label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="attending">Are you attending?<span class="required">*</span></label>
+                <textarea id="attending" name="attending" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Who else is coming with you?<span class="required">*</span></label>
+                <textarea id="guests" name="guests" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message<span class="required">*</span></label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>POWERED BY <a href="https://www.squarespace.com" target="_blank">SQUARESPACE</a></p>
+    </footer>
+    <script src="/js/rsvp.js"></script>
+</body>
+
+</html>

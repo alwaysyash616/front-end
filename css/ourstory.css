@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+.nav-brand {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/591c5d2ae4fcb596503cdc21/1495032017361-ZKWMJJHFZALGKRLBWNS2/img_0330-darkened.jpg?format=2500w');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    z-index: 1;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Story Content */
+.story-content {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.story-content h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+.story-content p {
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.photo-credit {
+    font-style: italic;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Best Friends Section */
+.best-friends {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/591c5d2ae4fcb596503cdc21/1495033848916-IN0JO37YDV6LJ6SYE9TU/img_0436-darkened.jpg?format=2500w');
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.best-friends h2 {
+    font-size: 72px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    color: white;
+}
+
+/* Photo Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    width: 80vw;
+    margin: auto;
+}
+
+.photo-item {
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.photo-item:hover {
+    transform: scale(1.05);
+}
+
+/* Proposal Section */
+.proposal {
+    height: 100vh;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/591c5d2ae4fcb596503cdc21/1495034837318-RSWH43UNFJDRIBG2YSPU/img_0730.jpg?format=2500w');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.proposal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.proposal h2 {
+    font-size: 72px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    z-index: 1;
+}
+
+/* Said Yes Section */
+.said-yes {
+    height: 100vh;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/591c5d2ae4fcb596503cdc21/1495035723747-FQF4BQ31LJUA674MOP8S/img_0823.jpg?format=2500w');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.said-yes-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.said-yes h2 {
+    font-size: 72px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    z-index: 1;
+}
+
+/* Footer */
+footer {
+    padding: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+footer a {
+    color: #666;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1,
+    .proposal h2,
+    .said-yes h2,
+    .best-friends h2 {
+        font-size: 48px;
+    }
+
+    .story-content {
+        padding: 60px 20px;
+    }
+}
